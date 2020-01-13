@@ -10,5 +10,13 @@ namespace Unitest.Demo
         }
     }
 
+    class SampleDevelopForGit
+    {
 
+    }
+
+    class SampleAdditionalDevelopForGit
+    {
+
+    }
 }
