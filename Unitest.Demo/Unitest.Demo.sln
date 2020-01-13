@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unitest.Demo", "Unitest.Demo\Unitest.Demo.csproj", "{6E535143-4FF5-42B9-93AE-75C817FFF7FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unitest.Demo", "Unitest.Demo\Unitest.Demo.csproj", "{6E535143-4FF5-42B9-93AE-75C817FFF7FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unitest.Demo.MSTest", "Unitest.Demo.MSTest\Unitest.Demo.MSTest.csproj", "{71BF0385-A580-483B-8CC9-6EAF7F38758E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unitest.Demo.MSTest", "Unitest.Demo.MSTest\Unitest.Demo.MSTest.csproj", "{71BF0385-A580-483B-8CC9-6EAF7F38758E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unitest.Demo.XUnit", "Unitest.Demo.XUnit\Unitest.Demo.XUnit.csproj", "{1CF3991B-13A2-4928-8EC5-34C265906E1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{71BF0385-A580-483B-8CC9-6EAF7F38758E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71BF0385-A580-483B-8CC9-6EAF7F38758E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71BF0385-A580-483B-8CC9-6EAF7F38758E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF3991B-13A2-4928-8EC5-34C265906E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF3991B-13A2-4928-8EC5-34C265906E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF3991B-13A2-4928-8EC5-34C265906E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF3991B-13A2-4928-8EC5-34C265906E1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

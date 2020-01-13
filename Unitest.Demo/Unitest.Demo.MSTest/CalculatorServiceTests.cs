@@ -31,7 +31,6 @@ namespace Unitest.Demo.MSTest
         [DataRow(1, 2, 3)]
         [DataRow(5, 2, 7)]
         [DataRow(2, 4, 6)]
-        [TestMethod]
         public void PlusMethod_returns_sum_of_two_digits_multiple(int digit1, int digit2, int expected)
         {
             var actual = _calculatorService.Plus(digit1, digit2);
@@ -42,7 +41,6 @@ namespace Unitest.Demo.MSTest
         [DataRow(3, 1, 2)]
         [DataRow(2, 6, -4)]
         [DataRow(4, 4, 0)]
-        [TestMethod]
         public void SubstractMethod_returns_digit1_minus_digit2(int digit1, int digit2, int expected)
         {
             var actual = _calculatorService.Substract(digit1, digit2);
