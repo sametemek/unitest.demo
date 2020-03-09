@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Unitest.Demo.MSTest
@@ -12,11 +13,52 @@ namespace Unitest.Demo.MSTest
             _calculatorService = new CalculatorService();
         }
 
+        [AssemblyInitialize]
+        public static void AssemblyInitialize(TestContext testContext)
+        {
+            Debug.WriteLine("CalculatorServiceTests AssemblyInitialize runs.");
+        }
+        
+        [ClassInitialize]
+        public static void ClassInitialize(TestContext testContext)
+        {
+            Debug.WriteLine("CalculatorServiceTests ClassInitialize runs.");
+        }
+
+        [TestInitialize]
+        public void TestInitialize()
+        {
+            Debug.WriteLine("CalculatorServiceTests TestInitialize runs.");
+        }
+
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            Debug.WriteLine("CalculatorServiceTests TestCleanup runs.");
+        }
+
+        [ClassCleanup]
+        public static void ClassCleanup()
+        {
+            Debug.WriteLine("CalculatorServiceTests TestCleanup runs.");
+        }
+        
+        [AssemblyCleanup]
+        public static void AssemblyCleanup()
+        {
+            Debug.WriteLine("CalculatorServiceTests AssemblyCleanup runs.");
+        }
+
         [TestMethod]
         public void PlusMethod_returns_sum_of_two_digits()
         {
-            var actual = _calculatorService.Plus(1, 2);
+            //Arrange
             var expected = 3;
+            
+            //Act
+            var actual = _calculatorService.Plus(1, 2);
+
+            //Assert
             Assert.AreEqual(actual, expected);
         }
 
