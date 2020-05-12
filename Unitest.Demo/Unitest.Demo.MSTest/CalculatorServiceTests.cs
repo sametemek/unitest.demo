@@ -1,4 +1,5 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Unitest.Demo.MSTest
@@ -87,6 +88,21 @@ namespace Unitest.Demo.MSTest
         {
             var actual = _calculatorService.Substract(digit1, digit2);
             Assert.AreEqual(actual, expected);
+        }
+
+        // Attributes
+
+        [TestMethod]
+        [Owner("Samet Emek")] // Testi yazan kişi
+        [TestCategory("Developer")] // Testleri kategorilemek için.
+        [Priority(1)]// Testlere öncelik vermek için.
+        [TestProperty("CustomProperty","CustomValue")]
+        //[Ignore] // Testin işlenmemesi, yok sayılması için yazılır.
+        [Timeout(400)] // milisaniye cinsinden teste timeout olur.
+        [Description("This is a dummy test.")] // Test metoduyla ilgili ekstra açıklama yapılmak istendiğinde kullanılır.
+        public void This_is_a_dummy_test()
+        {
+           Assert.IsTrue(true);
         }
     }
 }
